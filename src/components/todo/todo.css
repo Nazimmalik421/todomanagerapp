@@ -1,0 +1,108 @@
+.container{
+    position: relative;
+    text-align: center;
+    width: 75vw;
+    height: auto;
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+h1{
+    font-family: cursive;
+}
+.container__input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.task__input{
+    margin: 0 10px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 40%;
+    transition: all 0.5s;
+    height: 20px;
+    padding: 8px 10px;
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+.task__input:focus{
+    border-bottom: 3px solid tomato;
+    outline: none;
+}
+.task__input::placeholder{
+    color: rgba(250, 128, 114, .5);
+    font-size: 16px;
+}
+.btn__add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 33px;
+    border: none;
+    background-color: tomato;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+.task__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.task__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: tomato;
+    width: calc(40% - 33px * 3);
+    height: 30px;
+    border-radius: 3px;
+    margin: 5px 10px;
+    padding: 3px 10px;
+    transition: all 0.5s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+
+}
+.task__container:hover{
+    background-color: #2a2b3d;
+}
+.task__container p{
+    color: #fff;
+}
+.task__completed{
+    text-decoration: line-through;
+    opacity: .5;
+}
+.btn__task{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 33px;
+    border: none;
+    background-color: tomato;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    margin: 5px;
+    transition: all 0.5s;
+}
+.btn__task:hover{
+    background-color: #2a2b3d;
+    color: tomato;
+    transform: scale(1.2);
+}
+button:disabled{
+    opacity: .5;
+}
